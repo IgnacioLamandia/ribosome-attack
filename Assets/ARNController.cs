@@ -9,14 +9,16 @@ public class ARNController : MonoBehaviour
     public GameObject pointR;
     private float limitL;
     private float limitR;
-    float FireRate = 3.0f;
+    float FireRate;
     float NextFire;
     // Start is called before the first frame update
     void Start()
     {
-        NextFire = FireRate;
+        FireRate = 3f;
+        NextFire = Time.time + FireRate;
         limitL = pointL.transform.position.x;
         limitR = pointR.transform.position.x;
+
     }
 
 
@@ -24,9 +26,10 @@ public class ARNController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Time.time > NextFire)
+
+        if (Time.time >= NextFire)
         {
-            NextFire += FireRate;
+            NextFire = Time.time + FireRate;
             float randomX = Random.Range(limitL, limitR);
             Instantiate(ARN, new Vector3(randomX, transform.position.y, transform.position.z), Quaternion.identity);
         }
