@@ -17,6 +17,11 @@ public class SceneController : MonoBehaviour
         
     }
 
+    public void ShowActors()
+    {
+        SceneManager.LoadScene(2);
+    }
+
     public void StartGame()
     {
         SceneManager.LoadScene(1);
