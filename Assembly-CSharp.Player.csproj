@@ -55,6 +55,7 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\ProteinController.cs" />
     <Compile Include="Assets\Nucleolus.cs" />
     <Compile Include="Assets\SceneController.cs" />
     <Compile Include="Assets\Pointer.cs" />
@@ -62,7 +63,6 @@
     <Compile Include="Assets\Ribosome.cs" />
     <Compile Include="Assets\ARNController.cs" />
     <Compile Include="Assets\GameController.cs" />
-    <Compile Include="Assets\ProteinController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

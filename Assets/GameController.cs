@@ -16,6 +16,8 @@ public class GameController : MonoBehaviour
     public GameObject winScreen;
     public GameObject gameOver;
     public static bool gameIsPaused;
+    public int ribosomeLosts = 0;
+    public Slider difficultySlider;
 
     // Start is called before the first frame update
     void Start()
@@ -50,11 +52,23 @@ public class GameController : MonoBehaviour
         }
         ARNLostCount.text = "ARN perdidos: " + ARNLosts;
         proteinCount.text = "Proteinas creadas: " + score;
+        if(score >= 10)
+        {
+            proteinCount.color = Color.green;
+        }
         if(basalEnergy <= 5)
         {
             basalEnergyText.color = Color.red;
         }
         basalEnergyText.text = "Recursos basales disponibles: \n" + basalEnergy;
+        if (ribosomeLosts > 10)
+        {
+            difficultySlider.value = 100;
+        }
+        else if (ribosomeLosts > 5)
+        {
+            difficultySlider.value = 50;
+        }
     }
 
     public void PlayAgain()
