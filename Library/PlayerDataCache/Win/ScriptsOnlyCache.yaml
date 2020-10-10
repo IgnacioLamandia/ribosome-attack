@@ -36,6 +36,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
+    - UnityEngine.UI.Slider
     - UnityEngine.UI.Text
   sceneClasses:
     Assets/Scenes/Game.unity:
@@ -70,33 +71,35 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11824}
+      Script: {instanceID: 11822}
+    - Class: 114
+      Script: {instanceID: 11900}
     - Class: 114
       Script: {instanceID: 11902}
     - Class: 114
-      Script: {instanceID: 11904}
+      Script: {instanceID: 12136}
     - Class: 114
-      Script: {instanceID: 12138}
+      Script: {instanceID: 12190}
     - Class: 114
-      Script: {instanceID: 12192}
+      Script: {instanceID: 12896}
     - Class: 114
-      Script: {instanceID: 12898}
+      Script: {instanceID: 13672}
     - Class: 114
       Script: {instanceID: 13674}
     - Class: 114
-      Script: {instanceID: 13676}
+      Script: {instanceID: 13840}
     - Class: 114
-      Script: {instanceID: 13842}
+      Script: {instanceID: 14478}
     - Class: 114
-      Script: {instanceID: 14480}
+      Script: {instanceID: 14494}
     - Class: 114
-      Script: {instanceID: 14496}
+      Script: {instanceID: 14520}
     - Class: 114
-      Script: {instanceID: 14522}
+      Script: {instanceID: 14880}
     - Class: 114
-      Script: {instanceID: 14882}
+      Script: {instanceID: 15132}
     - Class: 114
-      Script: {instanceID: 15134}
+      Script: {instanceID: 15178}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -137,21 +140,74 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11824}
+      Script: {instanceID: 11822}
     - Class: 114
-      Script: {instanceID: 11994}
+      Script: {instanceID: 11992}
     - Class: 114
-      Script: {instanceID: 12138}
+      Script: {instanceID: 12136}
     - Class: 114
-      Script: {instanceID: 12192}
+      Script: {instanceID: 12190}
     - Class: 114
-      Script: {instanceID: 12898}
+      Script: {instanceID: 12896}
     - Class: 114
-      Script: {instanceID: 13674}
+      Script: {instanceID: 13672}
     - Class: 114
-      Script: {instanceID: 14496}
+      Script: {instanceID: 14494}
     - Class: 114
-      Script: {instanceID: 15134}
+      Script: {instanceID: 15132}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/TitleScreen.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11822}
+    - Class: 114
+      Script: {instanceID: 11992}
+    - Class: 114
+      Script: {instanceID: 12136}
+    - Class: 114
+      Script: {instanceID: 12190}
+    - Class: 114
+      Script: {instanceID: 12896}
+    - Class: 114
+      Script: {instanceID: 13672}
+    - Class: 114
+      Script: {instanceID: 14494}
+    - Class: 114
+      Script: {instanceID: 15132}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -201,7 +257,7 @@ ScriptsOnlyBuild:
     className: ProteinController
   - hash:
       serializedVersion: 2
-      Hash: 1ff7558e7a9a2334b886a8d5ded0dd75
+      Hash: 60ec234c761e3b909a030e1cc01331db
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Nucleolus
@@ -573,7 +629,7 @@ ScriptsOnlyBuild:
     className: GraphicRaycaster
   - hash:
       serializedVersion: 2
-      Hash: beb17b0d3010113398f06ec06a522284
+      Hash: e04cb787113a6785d332578f2942e9a4
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ARNController
@@ -597,7 +653,7 @@ ScriptsOnlyBuild:
     className: TMP_StyleSheet
   - hash:
       serializedVersion: 2
-      Hash: 68d64f7a552f93413a46b65c9dcf71b6
+      Hash: 26c19d7aff4bf8033bc80d2880b7cdfe
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameController
@@ -699,6 +755,7 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   platform: 5
   scenePathNames:
+  - Assets/Scenes/TitleScreen.unity
   - Assets/Scenes/IntroScene.unity
   - Assets/Scenes/Game.unity
-  playerPath: "C:/Users/Gast\xF3n/Desktop/TP3/TP3 - Ribosome Attack!.exe"
+  playerPath: C:/Users/Gaston/TP3 - Ribosome Attack!/Build/TP3 - Ribosome Attack!.exe

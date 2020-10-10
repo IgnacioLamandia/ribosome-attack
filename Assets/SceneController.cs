@@ -19,12 +19,12 @@ public class SceneController : MonoBehaviour
 
     public void ShowActors()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene("IntroScene");
     }
 
     public void StartGame()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("Game");
     }
     public void Exit()
     {

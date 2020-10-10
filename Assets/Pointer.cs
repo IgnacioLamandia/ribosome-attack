@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 public class Pointer : MonoBehaviour
@@ -15,9 +16,9 @@ public class Pointer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 pos = Camera.main.WorldToScreenPoint(transform.position);
-        Vector3 dir = Input.mousePosition - pos; 
-        float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg + difference;
-        transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+        Vector3 pos = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x,Input.mousePosition.y,0));
+        Vector3 dir = pos - transform.position; 
+        float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+        transform.rotation = Quaternion.Euler(0,0,angle + difference);
     }
 }

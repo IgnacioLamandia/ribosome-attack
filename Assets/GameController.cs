@@ -40,6 +40,10 @@ public class GameController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            SceneManager.LoadScene("TitleScreen");
+        }
         if(basalEnergy <= 0)
         {
             Time.timeScale = 0;

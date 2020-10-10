@@ -774,9 +774,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ribosome: {fileID: 526864068199037340, guid: cedff16de3492964e90d97de12254de3, type: 3}
   cooldownIndicator: {fileID: 375387542}
-  speed: 2
+  speed: 15
   DelayBetweenThrows: 1
-  animator: {fileID: 0}
 --- !u!95 &498122681
 Animator:
   serializedVersion: 3
@@ -2129,13 +2128,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1892541022}
-  m_LocalRotation: {x: -0, y: -0, z: 0.94166833, w: 0.33654246}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.59, y: 1.23, z: 0}
   m_LocalScale: {x: 7, y: 7, z: 1}
   m_Children: []
   m_Father: {fileID: 498122679}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 140.667}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1892541024
 MonoBehaviour:
   m_ObjectHideFlags: 0
